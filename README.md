@@ -2,11 +2,14 @@
 Tutorial on how to create a template for the post just like a page template
 
 ### Setp 1. 
-Add the following code in your functions.php
+//Add the following code in your functions.php
+```php
+<?php
 function add_custom_post_template_support() {
 add_post_type_support('post', 'page-attributes'); // Add support for post templates
 }
 add_action('init', 'add_custom_post_template_support');
+```
 
 ### Setp 2.
 Create a new file in your theme directory named `single-custom.php` // The file name is important
