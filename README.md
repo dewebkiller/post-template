@@ -10,6 +10,7 @@ add_action('init', 'add_custom_post_template_support');
 
 ### Setp 2.
 Create a new file in your theme directory named `single-custom.php` // The file name is important
+```php
 <?php
 /**
 * Template Name: Custom Post Template
@@ -30,6 +31,7 @@ get_header();
 </div>
 
 <?php get_footer(); ?>
+```
 
 ### Setp 3.
 Go to your WordPress dashboard and create a new post and select the template from the right side and select Custom Post Template.
